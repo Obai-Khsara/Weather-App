@@ -221,7 +221,7 @@ function getCityCoordinates(){
     let cityName = cityInput.value
     cityInput.value = ""
     if(!cityName) return
-    let GEOCODING_API_URL = `http://api.openweathermap.org/geo/1.0/direct?q=${cityName}&limit=1&appid=${api_key}`
+    let GEOCODING_API_URL = `https://api.openweathermap.org/geo/1.0/direct?q=${cityName}&limit=1&appid=${api_key}`
 
 
     axios.get(GEOCODING_API_URL)
